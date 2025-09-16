@@ -27,13 +27,13 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gitopsterrastate"
+    bucket = "gitops36"
     key    = "terraform.tfstate"
-    region = "us-east-2"
+    region = "us-east-1"
   }
 
   required_version = "~> 1.6.3"
 }
 ##
-##
+## the key file mentioned in s3 : terraform will create this file that is going to maintain the state of Terraform.
 ##
