@@ -3,7 +3,6 @@ module "vpc" {
   version = "5.1.2"
 
   name = "vprofile-eks"
-
   cidr = "172.20.0.0/16"
   azs  = slice(data.aws_availability_zones.available.names, 0, 3)
 ## data has been defined in main.tf file, we have referred from there and then used the slice function.
