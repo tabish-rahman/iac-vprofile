@@ -24,4 +24,6 @@ module "vpc" {
     "kubernetes.io/role/internal-elb"             = 1
   }
 }
+
+##
 ## We need some subnet tag for the EKS cluster. For the EKS cluster to run on VPC, these tags needs to be mentioned on the subnet.
